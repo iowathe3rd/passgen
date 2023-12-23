@@ -7,7 +7,7 @@ yargs
   .scriptName('passgen')
   .usage('$0 <cmd> [args]')
   .command<GeneratePasswordOptions>(
-    'generate',
+    '$0',
     'Generate a password',
     (yargs) => {
       yargs

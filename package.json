@@ -1,10 +1,13 @@
 {
-  "name": "passgen",
+  "name": "cryptopassgen",
   "version": "1.0.0",
   "description": "Password generator from random verb and secret",
   "main": "dist/src/index.js",
   "author": "Beglerov Baurzhan",
   "license": "MIT",
+  "bin": {
+    "cryptopassgen": "./dist/app.js"
+  },
   "scripts": {
     "dev": "nodemon --watch src/**/*.ts --exec ts-node ./src/app.ts",
     "build": "tsc",
@@ -17,7 +20,6 @@
   },
   "dependencies": {
     "@peculiar/webcrypto": "^1.4.3",
-    "dotenv": "^16.3.1",
     "prompts": "^2.4.2",
     "yargs": "^17.7.2"
   },
