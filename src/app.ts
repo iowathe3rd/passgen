@@ -14,6 +14,7 @@ yargs
         .positional('service', {
           type: 'string',
           describe: 'Service name for password generation',
+          alias: 's',
         })
         .option('secret', {
           type: 'number',
