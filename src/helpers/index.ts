@@ -1,2 +1,2 @@
-export { generatePassword } from './generatePassword';
-export { generateSalt } from './generateSalt';
+export { generatePassword } from "./generatePassword";
+export { generateSalt } from "./generateSalt";
