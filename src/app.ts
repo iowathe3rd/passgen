@@ -4,6 +4,8 @@ import generate from "./modules/generate";
 
 yargs
   .scriptName("passgen")
-  .usage("$0 [args]")
+  .usage("$0 <cmd> [args]")
   .command<GeneratePasswordOptions>([generate])
-  .help().argv;
+  .demandCommand(1, '')
+  .help()
+  .argv;
